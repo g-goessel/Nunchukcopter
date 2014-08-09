@@ -12,7 +12,7 @@ def get_pitch(wm,origin):
         return 0
     elif pitch >= 40 :
         pitch = 39
-    pitch = int(float(pitch)*32/40)
+    pitch = int(float(pitch)*16/40)
     return pitch
 
 

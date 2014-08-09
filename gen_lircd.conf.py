@@ -27,13 +27,13 @@ print "begin remote\n \
 # Pour savoir le nombre de cas possibles il faut faire
 # nbr_possibles = 2^nbr_de_bits_du_parametre
 
-for i in range(2**5):
+for i in range(2**4):
     for j in range(2**5):
         for k in range(2**5):
             for l in range(2**5):
                 for m in range(2):
                     print "  HELI_"+str(i)+"_"+str(j)+"_"+str(k)+"_"+str(l)+"_"+str(m)\
-                            +"    "+hex((i<<18) + (j<<13) + (k<<8) + (l<<3) + (m<<2) + (gen_check(i,j,k,l,m)))
+                            +"    "+hex((i<<19) + (j<<13) + (k<<8) + (l<<3) + (m<<2) + (gen_check(i,j,k,l,m)))
 
 print "  end  codes\n \
 end remote"
