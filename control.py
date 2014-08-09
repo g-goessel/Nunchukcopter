@@ -34,7 +34,7 @@ if __name__ == '__main__':
 		y     = get_y(wm,origin)
 		command=str(pitch)+'_'+str(roll)+'_'+str(x)+'_'+str(y)+'_'+str(light)
 		print "sent ",command
-		subprocess.call("irsend SEND_ONCE SILVERLIT HELI_"+command+, shell=True)
+		subprocess.call("irsend SEND_ONCE SILVERLIT HELI_"+command, shell=True)
 
 		#Début des commandes
 		if wm.state['nunchuk']['buttons'] == 2 :
