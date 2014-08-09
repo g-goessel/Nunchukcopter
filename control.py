@@ -1,3 +1,4 @@
+# -*- coding: utf8 -*-
 """
 Ceci est le programme principal qui va faire la liaison entre la manette
 et l helicoptere

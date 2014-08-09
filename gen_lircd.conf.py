@@ -1,5 +1,7 @@
 #! /usr/bin/python2.7
 
+# -*- coding: utf8 -*-
+
 """
 Ce programme permet de generer le fichier de configuration de lirc
 afin de pouvoir envoyer les commandes a l helicoptere de maniere simple

@@ -1,3 +1,5 @@
+# -*- coding: utf8 -*-
+
 """
 Fichier  contenant les fonctions utilisees par les programmes
 """

@@ -1,4 +1,5 @@
 #! /usr/bin/python2.7
+# -*- coding: utf8 -*-
 
 """
 Ce  programme permet de tester la connexion a la Nunchuk en faisant varier
