@@ -3,7 +3,7 @@
 """
 Fichier contenant les fonctions utilisées par les programmes
 """
-
+import time
 
 def get_pitch(wm,origin):
     # recalibre et inverse le signe pour une lecture plus naturelle
