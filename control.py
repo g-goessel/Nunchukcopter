@@ -1,7 +1,7 @@
 # -*- coding: utf8 -*-
 """
 Ceci est le programme principal qui va faire la liaison entre la manette
-et l helicoptere
+et l'hélicoptère
 """
 
 import time
@@ -42,7 +42,8 @@ if __name__ == '__main__':
 			light = (light+1)%2
 		elif wm.state['nunchuk']['buttons'] == 1 :
 			print "Z pressed"
-			origin=pause(wm,origin)
+			#on reacalibre la manette à la sortie de pause
+			origin=pause(wm)
 			time.sleep(0.2)
 		time.sleep(0.05)
 		count+=1

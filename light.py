@@ -2,8 +2,8 @@
 # -*- coding: utf8 -*-
 
 """
-Ce  programme permet de tester la connexion a la Nunchuk en faisant varier
-l intensite lumineuse d une LED reliee au pin GPIO PIN_LED selon l inclinaison
+Ce programme permet de tester la connexion a la Nunchuk en faisant varier
+l'intensité lumineuse d'une LED reliée au pin GPIO PIN_LED selon l'inclinaison
 verticale de la Nunchuk
 """
 

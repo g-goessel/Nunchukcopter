@@ -3,8 +3,8 @@
 # -*- coding: utf8 -*-
 
 """
-Ce programme permet de generer le fichier de configuration de lirc
-afin de pouvoir envoyer les commandes a l helicoptere de maniere simple
+Ce programme permet de générer le fichier de configuration de lirc
+afin de pouvoir envoyer les commandes a l'hélicoptère de manière simple
 A lire pour plus de details : http://winlirc.sourceforge.net/technicaldetails.html
 """
 
