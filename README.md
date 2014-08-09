@@ -13,4 +13,4 @@ Dépendances
 TODO
 ====
 
-* Indicateur de pause sur la manette (effet avec les voyants)
+* ENJOY !

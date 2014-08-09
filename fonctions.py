@@ -94,7 +94,54 @@ def pause(wm):
         print "Z still pressed"
         time.sleep(0.5)
     print "Z relieved"
+    i=0
     while wm.state['nunchuk']['buttons'] != 1:
+        print "Pause in progress"
+        wm.led=int(pause_led_style(i))
+        i+=1
+        i%=19
         time.sleep(0.5)
     print "End of the pause"
     return calibrate(wm)
+
+def pause_led_style(count):
+    if count == 0:
+        return '0001'
+    elif count == 1:
+        return '0010'
+    elif count == 2:
+        return '0100'
+    elif count == 3:
+        return '1000'
+    elif count == 4:
+        return '1001'
+    elif count == 5:
+        return '1010'
+    elif count == 6:
+        return '1100'
+    elif count == 7:
+        return '1101'
+    elif count == 8:
+        return '1110'
+    elif count == 9:
+        return '1111'
+    elif count == 10:
+        return '0111'
+    elif count == 11:
+        return '1011'
+    elif count == 12:
+        return '0011'
+    elif count == 13:
+        return '0101'
+    elif count == 14:
+        return '1001'
+    elif count == 15:
+        return '0001'
+    elif count == 16:
+        return '0010'
+    elif count == 17:
+        return '0100'
+    elif count == 18:
+        return '1000'
+    else:
+        return '0'
