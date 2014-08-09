@@ -8,7 +8,7 @@ import time
 import cwiid
 import os
 import subprocess
-from fonction import *
+from fonctions import *
 
 
 if __name__ == '__main__':
