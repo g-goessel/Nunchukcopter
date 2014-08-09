@@ -12,7 +12,7 @@ def get_pitch(wm,origin):
         return 0
     elif pitch >= 40 :
         pitch = 39
-    pitch = int(float(pitch)*16/40)
+    pitch = int(float(pitch)*32/40)
     return pitch
 
 
@@ -23,7 +23,7 @@ def get_roll(wm,origin):
         roll = 0
     elif roll >= 64 :
         roll = 63
-    roll = int(float(roll)*16/64)
+    roll = int(float(roll)*32/64)
     return roll
 
 
@@ -33,7 +33,7 @@ def get_x(wm,origin):
     elif x <0 : x=1
     elif x >= 200 : x=199
     x = float(x)/200
-    x = x*16
+    x = x*32
     x = int(x)
     return x
 
@@ -43,7 +43,7 @@ def get_y(wm,origin):
     elif y <0 : y=1
     elif y >= 200 : y=199
     y = float(y)/200
-    y = y*16
+    y = y*32
     y = int(y)
     return y
 

@@ -34,7 +34,7 @@ if __name__ == '__main__':
 		y     = get_y(wm,origin)
 		command=str(pitch)+'_'+str(roll)+'_'+str(x)+'_'+str(y)+'_'+str(light)
 		print "sent ",command
-		subprocess.call("irsend SEND_ONCE SILVERLIT HELI_"+command+"_"+str(gen_check(pitch,roll,x,y,light)), shell=True)
+		subprocess.call("irsend SEND_ONCE SILVERLIT HELI_"+command+, shell=True)
 
 		#Début des commandes
 		if wm.state['nunchuk']['buttons'] == 2 :
@@ -44,6 +44,8 @@ if __name__ == '__main__':
 			print "Z pressed"
 			#on reacalibre la manette à la sortie de pause
 			origin=pause(wm)
+			#on affiche a nouveau le niveau de la batterie
+			update_batt(wm)
 			time.sleep(0.2)
 		time.sleep(0.05)
 		count+=1
