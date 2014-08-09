@@ -6,7 +6,7 @@ afin de pouvoir envoyer les commandes a l helicoptere de maniere simple
 A lire pour plus de details : http://winlirc.sourceforge.net/technicaldetails.html
 """
 
-#import fonctions as fn
+from fonctions import *
 
 print "begin remote\n \
   name            SILVERLIT \n \
@@ -31,7 +31,7 @@ for i in range(2**5):
             for l in range(2**5):
                 for m in range(2):
                     print "  HELI_"+str(i)+"_"+str(j)+"_"+str(k)+"_"+str(l)+"_"+str(m)\
-                            +"    "+hex((i<<18) + (j<<13) + (k<<8) + (l<<3) + (m<<2) + (fn.gen_check(i,j,k,l,m)))
+                            +"    "+hex((i<<18) + (j<<13) + (k<<8) + (l<<3) + (m<<2) + (gen_check(i,j,k,l,m)))
 
 print "  end  codes\n \
 end remote"
