@@ -11,17 +11,20 @@ from fonctions import *
 
 print "begin remote\n \
   name            SILVERLIT \n \
+  flags           SPACE_ENC\n\
   bits            23\n \
   eps             30\n \
   aeps            100 \n \
-  header          648 585 631 1227 630 630\n \
-  one             1200   630\n \
-  zero            630   630\n \
+  header          648 585 631 1227 610 630 610 630\n \
+  ptrail          630\n \
+  one             1195   630\n \
+  zero            610   630\n \
   gap             39000\n \
-  foot            630 630 \n \
   \n \
   begin codes"
 
+
+#foot            630 630\n \
 # Ensuite on genere tous les codes IR possibles
 # Pour savoir le nombre de cas possibles il faut faire
 # nbr_possibles = 2^nbr_de_bits_du_parametre

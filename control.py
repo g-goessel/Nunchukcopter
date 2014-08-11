@@ -47,6 +47,7 @@ if __name__ == '__main__':
 			#on reacalibre la manette à la sortie de pause
 			origin=pause(wm)
 			#on affiche a nouveau le niveau de la batterie
+			wm.led=0
 			update_batt(wm)
 			time.sleep(0.2)
 		time.sleep(0.05)

@@ -5,6 +5,9 @@ Fichier contenant les fonctions utilisées par les programmes
 """
 import time
 
+def adjust(value,origin,max):
+    return (((float(value)-float(origin))/float(max))**3)*max
+
 def get_pitch(wm,origin):
     # recalibre et inverse le signe pour une lecture plus naturelle
     pitch=-(wm.state['nunchuk']['acc'][1]-origin["acc_1"])
@@ -49,8 +52,16 @@ def get_y(wm,origin):
 
 def update_batt(wm):
     batt_state = wm.state['battery']
-    if batt_state < 25 : wm.led=1
-    elif batt_state <50 : wm.led=3
+    wm.led=int('0001',2)
+    if batt_state > 25 :
+        time.sleep(0.3)
+        wm.led=int('0011',2)
+        if batt_state >50 :
+            time.sleep(0.3)
+            wm.led=int('0111',2)
+            if batt_state > 75:
+                time.sleep(0.3)
+                wm.led=int('1111',2)
     elif batt_state < 75 : wm.led=7
     else : wm.led=15
 
@@ -99,7 +110,7 @@ def pause(wm):
     i=0
     while wm.state['nunchuk']['buttons'] != 1:
         print "Pause in progress"
-        wm.led=int(pause_led_style(i))
+        wm.led=int(pause_led_style(i),2)
         i+=1
         i%=19
         time.sleep(0.5)
